@@ -1,0 +1,37 @@
+.keyboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 3px 3px;
+    &>.button:nth-last-child(2){
+        background-color: orange;
+    }
+    &>.button:nth-last-child(2):hover{
+        background-color: rgb(192, 109, 0);
+    }
+
+    &>.button:nth-last-child(4){
+        border-radius: 0 0 0 0.5rem;
+    }
+    &>.button:last-child{
+        border-radius: 0 0 0.5rem 0;
+    }
+}
+h1{
+    margin: 5% 0;
+}
+
+.inline-buttons{
+    margin:3px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3px;
+    &>.button:first-child{
+        background-color: darkred;
+    }
+    &>.button:first-child:hover{
+        background-color: rgb(255,0,0);
+    }
+}
