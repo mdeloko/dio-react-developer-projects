@@ -6,11 +6,11 @@ import { useState } from "react"
 
 function App() {
   const [firstNumber,setFirstNumber] = useState('0');
-  const [currentNumber, setCurrentNumber] = useState('0');
+  const [currentNumber, setCurrentNumber] = useState('');
   const [operation,setOperation] = useState('');
 
   function concatNumber(number){
-    setCurrentNumber(prev =>`${prev==='0'?number:prev+number}`);
+    setCurrentNumber(prev =>`${prev===''?number:prev+number}`);
   }
   function eraseAll(){
     setOperation('');
@@ -91,7 +91,7 @@ function App() {
   return (
   <div className="container">
     <h1>Calculadora em React!</h1>
-    <Screen value={currentNumber}/>
+    <Screen value={Intl.NumberFormat("pt-BR",{style:"decimal",maximumFractionDigits:6}).format(currentNumber)}/>
     <div className="inline-buttons">
       <Button label='C' handle={()=>eraseAll()}/>
       <Button label='BkSpc' handle={()=>eraseLast()}/>
@@ -110,7 +110,7 @@ function App() {
       <Button label="3" handle={()=>concatNumber('3')}/>
       <Button label="-" handle={()=>subNumber()}/>
       <Button label="0" handle={()=>concatNumber('0')}/>
-      <Button label="," handle={()=>concatNumber(',')}/>
+      <Button label="," handle={()=>concatNumber('.')}/>
       <Button label="=" handle={()=>equals()}/>
       <Button label="+" handle={()=>addNumber()}/>
     </div>
