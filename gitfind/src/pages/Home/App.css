@@ -1,0 +1,18 @@
+#git-bg{
+    height: 100vh;
+    position: fixed;
+    left: -16%;
+    filter: opacity(45%);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 2.5% 10% 0% 40%;
+}
+
+#container #repos-title{
+    font-size: 2.4rem;
+    align-self: center;
+    margin: 5% 0;
+}

@@ -1,0 +1,15 @@
+button{
+    background-color: #2d333b;
+    height: 2.5rem;
+    border: 0 solid #2d333b;
+    border-radius: 1.4rem;
+    width: 15%;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        border: 2px solid #2d333b;
+        background-color: #1d2128;
+    }
+    &:focus{
+        border:none;
+    }
+}

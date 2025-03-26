@@ -1,0 +1,36 @@
+#profile{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+#pfp{
+    width: 16.5%;
+    height: fit-content;
+    border-radius: 50%;
+    border: 2px #e5e5e5 solid;
+    object-fit: cover;
+    object-position: center;
+}
+
+#name-desc{
+    margin-left: 2.5%;
+}
+
+#profile h3{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+#profile h4{
+    margin: 2% 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#profile p{
+    font-size: 1rem;
+    margin: 2% 0 5%;
+    text-indent: 1.5rem;
+    font-weight: 100;
+}

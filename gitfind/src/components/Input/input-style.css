@@ -1,0 +1,21 @@
+input{
+    background-color: transparent;
+    height: 2.5rem;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 350;
+    border: 2px solid #999999;
+    border-radius: 1.4rem;
+    padding-left: 0.8rem;
+    padding-bottom: 0.1rem;
+    color: rgb(180,180,180);
+
+    &:focus{
+        border: none;
+    }
+}
+#input{
+    margin-top: 7%;
+    display: flex;
+    gap:2%;
+}
