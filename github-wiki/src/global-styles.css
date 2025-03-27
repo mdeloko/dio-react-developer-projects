@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-color: #212830;
+    --header-bg-color: #151b23;
+    --text-color: #d1d7e0;
+    --secondary-text-color:#fafafa60;
+    --text-accent-color: #478be6;
+    --text-negative-accent-color: #c93c37;
+}
+
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI','Roboto',Arial, sans-serif;
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
