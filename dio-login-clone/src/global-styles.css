@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+:root {
+  font-family: 'Open Sans','Segoe UI', 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bg-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-color: #1e192c;
+  --header-bg-color:#151515;
+  --text-color:#FFFFFF;
+  --text-highlight-color:#23dd7a;
+  --icon-color: #8647ad;
+  --pink-button-color:#e4105d;
+  --gray-button-color:#565656;
+}
+*,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
