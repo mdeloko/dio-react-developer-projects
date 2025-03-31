@@ -1,0 +1,13 @@
+header{
+    width: 100%;
+    background-color: var(--header-bg);
+    height:4rem;
+    position: fixed;
+    top:0;
+}
+.header-container{
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
