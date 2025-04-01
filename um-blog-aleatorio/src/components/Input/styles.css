@@ -1,0 +1,23 @@
+form{
+    width: 40%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:5px;
+}
+input{
+    padding: 0 10px;
+    width: 80%;
+    height: 2.5rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    outline: 1px solid var(--accent);
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    border: none;
+    transition: all 0.2s ease-out;
+    &:focus{
+        outline-color: var(--text-color);
+    }
+}

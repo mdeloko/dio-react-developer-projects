@@ -3,6 +3,7 @@
 :root {
   --bg: #a3a9aa;
   --header-bg:#8d8e8e;
+  --header-bg-tp:#8d8e8e60;
   --text-color: #171717;
   --accent:#52d1dc;
   --accent2:#634b66;
@@ -12,6 +13,7 @@
   :root {
     --bg: #1A1A1A;
     --header-bg:#111;
+    --header-bg-tp:#11111160;
     --text-color: #ededed;
     --accent:#475b5a;
   }
@@ -27,7 +29,8 @@ body {
 body {
   color: var(--foreground);
   background: var(--bg);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +44,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5rem 10%;
 }
 
 @media (prefers-color-scheme: dark) {

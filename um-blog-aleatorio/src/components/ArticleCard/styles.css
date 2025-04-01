@@ -1,0 +1,31 @@
+.card-link{
+    width: 100%;
+}
+article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--header-bg-tp);
+    padding: 2rem;
+    border-radius: 1rem;
+    outline: 0 solid var(--accent);
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+        outline-width: 2px;
+    }
+}
+h2{
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 3rem;
+}
+p{
+    text-indent: 2.5rem;
+}
+small{
+    margin-top: 2%;
+    font-size: 0.9rem;
+    font-weight: 900;
+}

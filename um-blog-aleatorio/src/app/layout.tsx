@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Meu Blog com Next!",
@@ -9,16 +8,11 @@ export const metadata: Metadata = {
   icons:"/globe.svg"  
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="pt-BR">
       <body>
-          <Header/>
-          {children}
+            {children}
       </body>
     </html>
   );

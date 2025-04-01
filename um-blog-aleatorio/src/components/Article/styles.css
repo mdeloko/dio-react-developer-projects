@@ -1,0 +1,34 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.article-title{
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: 5rem;
+    align-self: center;
+}
+.date{
+    font-weight: 500;
+    align-self: center;
+}
+.desc-title{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+.desc{
+    text-indent: 2rem;
+    font-weight: 350;
+    font-size: 1.2rem;
+
+}
+.article-start{
+    font-size: 2.2rem;
+    align-self: center;
+
+}
+.article{
+    white-space: pre-wrap;
+    text-indent: 2rem;
+    text-align: justify;
+    margin: 0.4vh 0;
+}

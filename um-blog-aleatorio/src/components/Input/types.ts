@@ -1,6 +1,8 @@
+import { Dispatch, FormEvent, SetStateAction } from "react";
+
 export interface IInput{
     placeholder: string;
-    value: string;
-    onClick: React.MouseEventHandler<HTMLButtonElement>;
-    onChange: React.ChangeEventHandler<HTMLInputElement>;
+    state:string;
+    setState:Dispatch<SetStateAction<string>>;
+    handleSearch(evt:FormEvent):Promise<void>;
 }
